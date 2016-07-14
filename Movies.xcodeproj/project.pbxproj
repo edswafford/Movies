@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64A1E9B51D37A4E100660193 /* MoviesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A1E9B41D37A4E100660193 /* MoviesManager.swift */; };
 		64E68D751D3716F90066603C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E68D741D3716F90066603C /* AppDelegate.swift */; };
 		64E68D771D3716F90066603C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E68D761D3716F90066603C /* ViewController.swift */; };
 		64E68D7A1D3716F90066603C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E68D781D3716F90066603C /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		64A1E9B41D37A4E100660193 /* MoviesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesManager.swift; sourceTree = "<group>"; };
 		64E68D711D3716F90066603C /* Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E68D741D3716F90066603C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64E68D761D3716F90066603C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		64E68DA41D3717830066603C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				64A1E9B41D37A4E100660193 /* MoviesManager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64E68D771D3716F90066603C /* ViewController.swift in Sources */,
+				64A1E9B51D37A4E100660193 /* MoviesManager.swift in Sources */,
 				64E68D751D3716F90066603C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,6 +527,7 @@
 				64E68D9B1D3716F90066603C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		64E68D9C1D3716F90066603C /* Build configuration list for PBXNativeTarget "MoviesTests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +536,7 @@
 				64E68D9E1D3716F90066603C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		64E68D9F1D3716F90066603C /* Build configuration list for PBXNativeTarget "MoviesUITests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +545,7 @@
 				64E68DA11D3716F90066603C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
