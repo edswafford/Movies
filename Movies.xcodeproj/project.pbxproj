@@ -97,12 +97,10 @@
 		64E68D731D3716F90066603C /* Movies */ = {
 			isa = PBXGroup;
 			children = (
-				64E68D741D3716F90066603C /* AppDelegate.swift */,
-				64E68D761D3716F90066603C /* ViewController.swift */,
-				64E68D781D3716F90066603C /* Main.storyboard */,
-				64E68D7B1D3716F90066603C /* Assets.xcassets */,
-				64E68D7D1D3716F90066603C /* LaunchScreen.storyboard */,
-				64E68D801D3716F90066603C /* Info.plist */,
+				64E68DA51D37179D0066603C /* Supporting Files */,
+				64E68DA41D3717830066603C /* Model */,
+				64E68DA31D37176B0066603C /* Controller */,
+				64E68DA21D3717460066603C /* View */,
 			);
 			path = Movies;
 			sourceTree = "<group>";
@@ -123,6 +121,40 @@
 				64E68D961D3716F90066603C /* Info.plist */,
 			);
 			path = MoviesUITests;
+			sourceTree = "<group>";
+		};
+		64E68DA21D3717460066603C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				64E68D781D3716F90066603C /* Main.storyboard */,
+				64E68D7D1D3716F90066603C /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		64E68DA31D37176B0066603C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				64E68D761D3716F90066603C /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		64E68DA41D3717830066603C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		64E68DA51D37179D0066603C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				64E68D801D3716F90066603C /* Info.plist */,
+				64E68D741D3716F90066603C /* AppDelegate.swift */,
+				64E68D7B1D3716F90066603C /* Assets.xcassets */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +225,7 @@
 				TargetAttributes = {
 					64E68D701D3716F90066603C = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = B5K7458SJX;
 					};
 					64E68D841D3716F90066603C = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -401,10 +434,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Movies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.learning.ces.Movies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -412,10 +448,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Movies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.learning.ces.Movies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
