@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var movies = [Movies]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,13 +22,20 @@ class ViewController: UIViewController {
     }
 
     
-    func didLoadData(result: String) {
-        let alert = UIAlertController(title: (result), message: nil, preferredStyle: .Alert)
-        let okAction = UIAlertAction(title: "OK", style: .Default) { action -> Void in
-            // do something if you want
+    func didLoadData(movies: [Movies]) {
+        self.movies = movies
+        
+        for (index, item) in movies.enumerate() {
+            var price = "Rent $\(item.mRentalPrice)"
+            
+            if item.mRentalPrice.isEmpty {
+                price = "Buy $\(item.mPrice)"
+            }
+            else {
+                price += " Buy $\(item.mPrice)"
+            }
+            print("\(index) name = \(item.mName) \(price)")
         }
-        alert.addAction(okAction)
-        self.presentViewController(alert, animated: true, completion: nil)
     }
 
 }
